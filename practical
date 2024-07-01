@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class pract {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENter number : ");
+        int mynumber=input.nextInt();
+                int[] numbers={1,2,3,9,5,6,7,5,10,88,1,10,7,90,88};
+                int x=0;
+                int count=0;
+                while (x<numbers.length){
+                    if(mynumber==numbers[x]){
+                        count++;
+                    }
+                    x++;
+                }
+        System.out.println("you found " +count + " times");
+    }
+}
