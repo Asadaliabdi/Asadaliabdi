@@ -1,0 +1,22 @@
+public class Assignment2 {
+    public static void main(String[] args) {
+
+
+        char[] letters= {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                'v', 'w', 'x', 'y', 'z', 'u', 't', 's', 'w', 'v', 'y',
+                'k', 'j', 'm', 'l', 'o', 'n', 'u', 't', 's', 'w', 'a', 'f',
+                'r', 'u', 't', 's', 'b', 'c', 'e', 'g', 'f', 'd', 'x', 'g',
+                'e', 'g', 'f', 'd', 'i', 'f', 'd', 'i', 'h', 'k', 'j', 'e'};
+
+        for (int i = 0; i < letters.length; i++) {
+            int count = 0;
+            for (int j = 0; j < letters.length; j++) {
+                if (letters[i] == letters[j]) {
+                    count++;
+                }
+            }
+            System.out.println("char " + letters[i] + " exists in array " + count + " times");
+        }
+    }
+}
